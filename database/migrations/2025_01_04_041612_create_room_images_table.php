@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('room_images', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('boarding_house_id')->constrained();
+            $table->string('image');
             $table->timestamps();
         });
     }

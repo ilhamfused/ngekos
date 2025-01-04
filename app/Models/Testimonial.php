@@ -5,14 +5,14 @@ namespace App\Models;
 use App\Models\BoardingHouse;
 use Illuminate\Database\Eloquent\Model;
 
-class Bonus extends Model
+class Testimonial extends Model
 {
     //
     protected $fillable = [
         'boarding_house_id',
         'name',
-        'image',
-        'description',
+        'photo',
+        'rating',
     ];
 
     public function boardingHouse()
